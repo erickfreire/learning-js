@@ -5,16 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DETRAN</title>
     <style>
+        html, body {
+            width:100%;
+            height:100%;
 
+        }
     </style>
 </head>
 <body>
     <h1>Sistema de Multas</h1>
     Velocidade do carro: 
-    <input type="number" id="txtvel">
-    <button value="Verificar" onclick="calcular()">Verificar</button>
-    <div id="res">
-    <script>
+    <div class="container">
+        <input type="number" id="txtvel">
+        <button value="Verificar" onclick="calcular()">Verificar</button>
+        <div id="res">
+    </div>
+        <script>
         function calcular () {
             var txtvel = document.getElementById('txtvel')
             var vel = Number(txtvel.value)
@@ -31,6 +37,6 @@
 </body>
 <!--desafio 24:39 fazer criar um formulario com ifs, perguntando qual pais se tiver certa resposta cai em um if se outra em outro if. fazer o ex 09 mas usando formato de site basicamente.-->
 <!--Revisar caderno amarelo com conceitos basicos iniciantes-->
-
+<!--Colocar estilo nesse formulario, o mesmo do form.png que está na pasta principal-->
 
 </html>
