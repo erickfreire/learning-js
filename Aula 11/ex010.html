@@ -4,30 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DETRAN</title>
+    <style>
+
+    </style>
 </head>
 <body>
     <h1>Sistema de Multas</h1>
-    Velocidade do carro: <input type="number" name="vel" id="txtvel">
-    <input type="button" value="Verificar" onclick="calcular()">
+    Velocidade do carro: 
+    <input type="number" id="txtvel">
+    <button value="Verificar" onclick="calcular()">Verificar</button>
     <div id="res">
     <script>
         function calcular () {
-            var txtv = document.getElementById('txtvel')
-            var res = document.querySelector('div#res')  // id=# class=.
-            var vel = Number(txtv.value)
-            res.innerHTML = `<p>Sua velocidade atual é de <strong>${vel} km/h<strong></p>`
-            if (vel>60){ // condição if para ver se toma multa ou não
-                res.innerHTML`Você passou do limite de velocidade, MULTADO!`
-            }
-            else {
-                res.innerHTML`Você está dentro do limite de velocidade, dirija sempre com cinto de segurança!`
+            var txtvel = document.getElementById('txtvel')
+            var vel = Number(txtvel.value)
+            var res = document.getElementById('res') 
+            res.innerHTML = `<p>Sua velocidade atual é de <strong>${vel} km/h<strong></p>`             
+            if (vel>60){ 
+                res.innerHTML += `Você passou do limite de velocidade, MULTADO!`
+            }else{
+                res.innerHTML += `Você está dentro do limite de velocidade, dirija sempre com cinto de segurança!`
             }            
         }
-         
-            //desafio 24:39 fazer criar um formulario com ifs, perguntando qual pais se tiver certa resposta cai em um if se outra em outro if. fazer o ex 09 mas usando formato de site basicamente.
-
-            //aula 12
     </script>
 
 </body>
+<!--desafio 24:39 fazer criar um formulario com ifs, perguntando qual pais se tiver certa resposta cai em um if se outra em outro if. fazer o ex 09 mas usando formato de site basicamente.-->
+<!--Revisar caderno amarelo com conceitos basicos iniciantes-->
+
+
 </html>
