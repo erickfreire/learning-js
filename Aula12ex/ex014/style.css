@@ -1,5 +1,5 @@
 body{
-    background-image: url('color-2174049_1920.png');
+    background: rgb(120, 120, 235);
     font: normal 15pt Arial;
 }
 
@@ -16,6 +16,11 @@ section{
     padding: 15px;
     width: 500px;
     margin: auto;
+}
+
+div{
+    text-align: center;
+    padding: 10px;
 }
 
 footer{
